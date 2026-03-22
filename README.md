@@ -2,6 +2,14 @@
 
 My minimalistic blogging environment, inspired by [Veit's blog](https://blog.veitheller.de/).
 
+## Stack
+
+This blog is powered by a markdown-first environment, because I like writing that the most. The following tools are used to transform a collection of markdown files into the blog:
+
+- [markdown-it-py](https://markdown-it-py.readthedocs.io)
+- [jinja](https://jinja.palletsprojects.com/en/stable/)
+- [CloudFlare Pages](https://developers.cloudflare.com/pages/)
+
 ## Deployment
 
 CloudFlare Pages are used to host this blog. For the time being the Wrangler CLI is used for this.
