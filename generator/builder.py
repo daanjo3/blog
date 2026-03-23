@@ -60,7 +60,7 @@ def generatePosts():
 def generateHome():
     template = env.get_template("index.html")
 
-    postsHtml = ['<ul>']
+    postsHtml = ['<ul class="post-list">']
     for fileName in getPosts():
         metadata = getPostMetadata(fileName)
         fileNameClean = fileName.split(".")[0]
@@ -73,5 +73,5 @@ def generateHome():
         f.write(pageHtml)
 
 
-generatePosts()
-generateHome()
+# generatePosts()
+# generateHome()
