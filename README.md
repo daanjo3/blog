@@ -20,7 +20,7 @@ pnpx wrangler login
 
 # builld the latest state of the blog
 source ./venv/bin/activate
-python ./generator/generator.py
+python ./generator/main.py
 
 # deploy the latest state
 pnpx wrangler pages deploy build
