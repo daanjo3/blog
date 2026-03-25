@@ -1,0 +1,19 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    develop:
+      watch:
+        - action: sync+restart
+          path: ./generator
+          target: /app/generator
+        - action: sync
+          path: ./posts
+          target: /app/posts
+        - action: sync
+          path: ./public
+          target: /app/public
+        - action: sync
+          path: ./templates
+          target: /app/templates

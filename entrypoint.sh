@@ -1,0 +1,1 @@
+python /app/generator/main.py --watch && python -m http.server -d build 8000
