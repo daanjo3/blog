@@ -10,6 +10,14 @@ This blog is powered by a markdown-first environment, because I like writing tha
 - [jinja](https://jinja.palletsprojects.com/en/stable/)
 - [CloudFlare Pages](https://developers.cloudflare.com/pages/)
 
+## Development
+
+To simplify development a docker setup has been made. This will start the generator in watch mode and start a HTTP server. In watch mode it will sync the input files (content, templates, public files) and restart the container if the generator is updated.
+
+```sh
+docker compose up --watch
+```
+
 ## Deployment
 
 CloudFlare Pages are used to host this blog. For the time being the Wrangler CLI is used for this.

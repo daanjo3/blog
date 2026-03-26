@@ -19,6 +19,7 @@ dst = args.output
 builder = Builder(src, dst)
 
 def build():
+    print("[generator] (re)generating site")
     if exists(dst):
         rmtree(dst)
     makedirs(join(dst, "posts"))
@@ -27,8 +28,10 @@ def build():
     builder.generatePosts()
 
     copytree("public", "build/public")
+    print("[generator] done generating!")
 
 def watch():
+    print(f"[generator] watching {src}/posts, {src}/public, {src}/templates for changes")
     run_process(join(src, "posts"), join(src, "public"), join(src, "templates"), target=build)
 
 if __name__ == '__main__':

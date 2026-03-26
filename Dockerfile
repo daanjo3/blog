@@ -14,6 +14,6 @@ COPY posts/ posts/
 COPY public/ public/
 COPY templates/ templates/
 
-COPY entrypoint.sh .
+COPY dev.py .
 
-ENTRYPOINT ["/bin/sh", "/app/entrypoint.sh"]
+ENTRYPOINT ["python", "dev.py"]
