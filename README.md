@@ -34,4 +34,4 @@ python ./generator/main.py
 pnpx wrangler pages deploy build
 ```
 
-At some point Github Actions will be used to automatically push changes on the main branch to the live environment.
+Github Actions have been set up to publish the latest state of main when releasing.
