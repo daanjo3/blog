@@ -24,8 +24,7 @@ def build():
         rmtree(dst)
     makedirs(join(dst, "posts"))
 
-    builder.generateHome()
-    builder.generatePosts()
+    builder.build()
 
     copytree("public", "build/public")
     print("[generator] done generating!")

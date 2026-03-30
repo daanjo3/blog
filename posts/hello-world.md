@@ -5,7 +5,7 @@ date: 22-03-2026
 
 This is the first page of my blog using a self-written static site generator processing markdown. This project is inspired by [Veit's blog](https://blog.veitheller.de/) and it will therefore probably bear a lot of similarity, at least initially. Though over time I certainly hope I'll be able to give it some flair of my own.
 
-I'm not exactly sure yet what I'll be done with this project and how long it'll keep me entertained. I guess we'll find out.
+I'm not exactly sure yet what I'll be doing with this project and how long it'll keep me entertained. I guess we'll find out.
 
 ### AI disclaimer
 
