@@ -160,5 +160,5 @@ li {
 
 /* -- Post content (post) */ 
 .post-content a {
-  font-weight bold;
+  font-weight: bold;
 }
