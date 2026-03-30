@@ -68,6 +68,10 @@ p {
   margin: 0 0 1.25rem;
 }
 
+/*a {
+  font-weight: bold;
+}*/
+
 code {
   font-size: 0.85em;
   background: var(--border);
@@ -121,8 +125,6 @@ header a:hover {
 }
 
 .post-list a:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
   opacity: 1;
 }
 
@@ -154,4 +156,9 @@ li {
   color: var(--muted);
   white-space: nowrap;
   flex-shrink: 0;
+}
+
+/* -- Post content (post) */ 
+.post-content a {
+  font-weight bold;
 }

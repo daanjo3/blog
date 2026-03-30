@@ -31,7 +31,7 @@ class Builder:
         with open(join(self.postDir, postName), 'r') as f:
             content = f.read()
         if content == None:
-                raise "Failed to read markdown"
+                raise Exception("Failed to read markdown")
         return content
 
     def getPostMetadata(self, postName, tokens=None) -> dict:
@@ -51,7 +51,9 @@ class Builder:
             
             fileNameClean = fileName.split(".")[0]
             fileNameCleanFull = f"{fileNameClean}.html"
-            title = metadata["title"] if fileNameClean in metadata else fileNameClean
+            print(metadata)
+            print(fileNameClean)
+            title = metadata["title"] if "title" in metadata else fileNameClean
             
             pageHtml = template.render(title=title, content=contentHtml)
 
@@ -65,7 +67,7 @@ class Builder:
         for fileName in self.getPosts():
             metadata = self.getPostMetadata(fileName)
             fileNameClean = fileName.split(".")[0]
-            title = metadata["title"] if fileNameClean in metadata else fileNameClean
+            title = metadata["title"] if "title" in metadata else fileNameClean
             postsHtml.append(f'<li><a href="posts/{fileNameClean}.html">{title}</a></li>')
         postsHtml.append('</ul>')
 
@@ -74,6 +76,7 @@ class Builder:
             f.write(pageHtml)
 
 def parseFrontMatter(tokens: list[Token]) -> dict:
+    metadata = dict()
     for token in tokens:
         if token.type != 'front_matter':
             continue
@@ -82,4 +85,4 @@ def parseFrontMatter(tokens: list[Token]) -> dict:
         for entry in entries:
             data = entry.split(":")
             metadata[data[0].strip()] = data[1].strip()
-        return metadata
+    return metadata
