@@ -1,5 +1,5 @@
 ---
-title: On privacy and blogs
+title: On Blogs And Privacy
 date: 04-01-2026
 ---
 
@@ -12,6 +12,6 @@ I know I generally keep a low profile due to multiple reasons;
 2. I don't feel like I have anything to share that is worthwhile.
 3. I don't want to be interesting to the wrong people/organizations.
 
-As you see there are a lot of "don't"s in there. And the reason I've decided to create this blog anyway is because behind these "don'ts" there are subtle wishes for some "do's". Most notably that I want to write stuff with the idea that it's out there, regardless of whether anyone is actually reading it. I would also like to reach out more and having interesting talks with random internet strangers, and that means giving up some privacy. I really admire people that do this and make cool stuff to put it online. The latest example I can think of is this guy that introduced me to the indie web, where he also put his website [onio.club](onio.club).
+As you see there are a lot of "don't"s in there. And the reason I've decided to create this blog anyway is because behind these "don'ts" there are subtle wishes for some "do's". Most notably that I want to write stuff with the idea that it's out there, regardless of whether anyone is actually reading it. I would also like to reach out more and have interesting talks with random internet strangers, and that means giving up some privacy. I really admire people that do this and make cool stuff to put it online. The latest example I can think of is this guy that introduced me to the indie web, where he also put his website [onio.club](onio.club).
 
-So the fact that this blogs exists means I've decided to let go of some privacy, I just like putting my name under things. And I hope that I'm smart enough to prevent getting seriously abused from making my presence known. Which makes it sound as if I've been looking at the web from the perspective of [the dark forest theory](https://en.wikipedia.org/wiki/Dark_forest_hypothesis) a bit too much. And despite the comparison between space and the web is not entirely crazy, I'll be out in the forest as I'm sure my web neighbors are nice :)
+So the fact that this blogs exists means I've decided to let go of some privacy, I just like putting my name under things. And I hope that I'm smart enough to prevent getting seriously abused from making my presence known. Which makes it sound as if I've been looking at the web from the perspective of [the dark forest theory](https://en.wikipedia.org/wiki/Dark_forest_hypothesis) a bit too much. And though this comparison between space and the web is not entirely crazy, I'll be out in the forest as I'm sure my web neighbors are nice :)
