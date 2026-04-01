@@ -1,5 +1,5 @@
 ---
-title: Public identities and privacy
+title: On privacy and blogs
 date: 04-01-2026
 ---
 
