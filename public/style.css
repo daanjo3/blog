@@ -158,7 +158,26 @@ li {
   flex-shrink: 0;
 }
 
-/* -- Post content (post) */ 
+/* -- Post content (post) */
 .post-content a {
   font-weight: bold;
+}
+
+/* ── Footer ─────────────────────────────────────────────── */
+footer {
+  max-width: 680px;
+  margin: 1.5rem auto 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+footer a {
+  display: flex;
+  opacity: 0.6;
+}
+
+footer a:hover {
+  opacity: 1;
+  text-decoration: none;
 }

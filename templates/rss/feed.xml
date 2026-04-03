@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <atom:link href="https://blog.daanmeijers.nl/feed.xml" rel="self" type="application/rss+xml"/>
+        <title>{{ title | safe }}</title>
+        <link>{{ url }}</link>
+        <description>
+            A RSS news feed for Daan's blog.
+        </description>
+        <language>en-US</language>
+        <lastBuildDate>{{ buildDate }}</lastBuildDate>
+        {% for post in posts %}
+        <item>
+            <title>{{ post.title | safe }}</title>
+            <description>{{ post.title | safe }}</description>
+            <link>{{ url }}/posts/{{ post.filename }}</link>
+            <pubDate>{{ post.dateRss }}</pubDate>
+            <guid>{{ url }}/posts/{{ post.filename }}</guid>
+        </item>
+        {% endfor %}
+    </channel>
+</rss>

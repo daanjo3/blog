@@ -2,16 +2,27 @@ from pathlib import Path
 
 from jinja2 import Template
 from markdown import md, parseFrontMatter
+from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
+from email.utils import format_datetime
 
 class PostRef:
     title: str
     date: str
+    dateRss: str
     path: Path
+    filename: str
 
     def __init__(self, title: str, date: str, path: Path):
         self.title = title
         self.date = date
+        
+        dt = datetime.strptime(date, "%d-%m-%Y")
+        dt = dt.replace(tzinfo=timezone.utc)
+        self.dateRss = format_datetime(dt)
+
         self.path = path
+        self.filename = path.stem
 
 class Post:
     title: str

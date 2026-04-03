@@ -1,6 +1,6 @@
 ---
 title: On Blogs And Privacy
-date: 04-01-2026
+date: 01-04-2026
 ---
 
 This is not the first blog I've started building. But it is the only one you will be able to find online. I do have plenty of public profiles spread across the internet, on LinkedIn, Mastodon, Instagram, Github, Steam, and so on. Though you won't find more content on all those combined compared to this blog. And that is because I find my relation with internet privacy a bit complicated.

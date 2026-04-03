@@ -14,6 +14,6 @@ COPY posts/ posts/
 COPY public/ public/
 COPY templates/ templates/
 
-COPY dev.py .
+COPY dev.py config.toml .
 
 ENTRYPOINT ["python", "dev.py"]
