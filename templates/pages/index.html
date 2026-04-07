@@ -10,23 +10,33 @@
     <link rel="stylesheet" href="/public/style.css" />
   </head>
   <body>
+    <header>
+      <h1>Daan's walls of text</h1>
+    </header>
     <main>
-        <h1>Daan's walls of text</h1>
         <hr>
         <div class="content">
           <ul class="post-list">
             {{ index | safe }}
           </ul>
         </div>
+        <hr>
     </main>
-    <hr>
     <footer>
-      <a href="https://github.com/daanjo3/blog" aria-label="GitHub" title="GitHub">
-        <img src="https://cdn.simpleicons.org/github/6b6b6b" width="20" height="20" alt="GitHub">
-      </a>
-      <a href="https://blog.daanmeijers.nl/feed.xml" aria-label="RSS feed" title="RSS feed">
-        <img src="https://cdn.simpleicons.org/rss/6b6b6b" width="20" height="20" alt="RSS feed">
-      </a>
+      <p>
+        Check out the codebase on
+        <a href="https://github.com/daanjo3/blog" aria-label="GitHub" title="GitHub">
+          <img src="https://cdn.simpleicons.org/github/6b6b6b" width="20" height="20" alt="GitHub">
+          Github
+        </a>
+      </p>
+      <p>
+        Get post updates via
+        <a href="{{ url }}/feed.xml" aria-label="RSS feed" title="RSS feed">
+          <img src="https://cdn.simpleicons.org/rss/6b6b6b" width="20" height="20" alt="RSS feed">
+          RSS
+        </a>
+      </p>
     </footer>
   </body>
 </html>

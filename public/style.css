@@ -26,6 +26,7 @@
 
 html {
   font-size: 19px;
+  height: 100%;
 }
 
 body {
@@ -35,12 +36,28 @@ body {
   color: var(--fg);
   font-family: 'Merriweather', Georgia, serif;
   line-height: 1.75;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ── Layout ─────────────────────────────────────────────── */
-header, main {
+header, main, footer {
+  width: 100%;
   max-width: 680px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+main > hr:last-child {
+  margin-top: auto;
+  margin-bottom: 0;
 }
 
 header {
@@ -68,10 +85,6 @@ p {
   margin: 0 0 1.25rem;
 }
 
-/*a {
-  font-weight: bold;
-}*/
-
 code {
   font-size: 0.85em;
   background: var(--border);
@@ -94,8 +107,6 @@ pre code {
 }
 
 /* ── Links ──────────────────────────────────────────────── */
-
-/* Default links (post body) */
 a {
   color: var(--link);
   text-decoration: none;
@@ -110,21 +121,10 @@ a:hover {
 header a {
   font-size: 0.9rem;
   color: var(--muted);
-  text-decoration: none;
 }
 
 header a:hover {
   color: var(--fg);
-  opacity: 1;
-}
-
-/* Index post list links — plain text, underline on hover only */
-.post-list a {
-  color: var(--link);
-  text-decoration: none;
-}
-
-.post-list a:hover {
   opacity: 1;
 }
 
@@ -151,6 +151,10 @@ li {
   padding: 0.4rem 0;
 }
 
+.content {
+  margin-bottom: 1rem;
+}
+
 .post-date {
   font-size: 0.85rem;
   color: var(--muted);
@@ -165,15 +169,14 @@ li {
 
 /* ── Footer ─────────────────────────────────────────────── */
 footer {
-  max-width: 680px;
-  margin: 1.5rem auto 0;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+  padding-top: 0.75rem;
 }
 
 footer a {
-  display: flex;
+  display: inline-flex;
+  margin-left: 4px;
+  align-items: center;
+  gap: 0.4rem;
   opacity: 0.6;
 }
 

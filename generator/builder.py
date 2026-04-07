@@ -70,7 +70,7 @@ class Builder:
         pageTemplate = self.page_env.get_template("index.html")
         itemTemplate = self.snippet_env.get_template("post-list-item.html")
 
-        postsHtml = [itemTemplate.render(filename=post.filename, title=post.title) for post in posts]
+        postsHtml = [itemTemplate.render(url=self.url, filename=post.filename, title=post.title) for post in posts]
         pageHtml = pageTemplate.render(index="\n".join(postsHtml))
         with open(join(self.dst, "index.html"), 'w') as f:
             f.write(pageHtml)
